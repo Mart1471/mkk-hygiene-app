@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b5d3b">
+  <meta name="description" content="Installierbarer MKK Hygiene-Monitor für amtliche Veröffentlichungen nach § 40 Abs. 1a LFGB.">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>MKK Hygiene-Monitor</title>
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="eyebrow">Main-Kinzig-Kreis</div>
+      <h1>Hygiene-Monitor</h1>
+      <p>Amtliche Lebensmittel-Veröffentlichungen schnell finden und beobachten.</p>
+    </div>
+    <button id="installBtn" class="ghost" hidden>App installieren</button>
+  </header>
+
+  <main>
+    <section class="panel filters" aria-label="Suche und Filter">
+      <label>
+        <span>Suche</span>
+        <input id="searchInput" type="search" placeholder="Betrieb, Straße, Ort oder Stichwort …" autocomplete="off">
+      </label>
+      <label>
+        <span>Ort</span>
+        <select id="townFilter"><option value="">Alle Orte</option></select>
+      </label>
+      <div class="actions">
+        <button id="refreshBtn">Jetzt aktualisieren</button>
+        <button id="notifyBtn" class="secondary">Benachrichtigungen</button>
+      </div>
+    </section>
+
+    <section class="panel watch-panel">
+      <div>
+        <h2>Orte beobachten</h2>
+        <p>Ohne Auswahl werden neue MKK-Einträge aller Orte gemeldet. Für gezielte Meldungen Orte hinzufügen.</p>
+      </div>
+      <div class="watch-controls">
+        <select id="watchTown"><option value="">Ort auswählen …</option></select>
+        <button id="addWatchBtn" class="secondary">Beobachten</button>
+      </div>
+      <div id="watchList" class="chips" aria-live="polite"></div>
+    </section>
+
+    <section class="summary-row" aria-live="polite">
+      <div><strong id="resultCount">0</strong><span>Treffer</span></div>
+      <div><strong id="lastUpdated">–</strong><span>Datenstand</span></div>
+    </section>
+
+    <section id="statusBox" class="status" hidden></section>
+    <section id="results" class="cards" aria-label="Veröffentlichungen"></section>
+
+    <section class="panel info">
+      <h2>Quelle und Hinweis</h2>
+      <p>Die App wertet ausschließlich die öffentlich zugänglichen Veröffentlichungen des VerbraucherFensters Hessen nach § 40 Abs. 1a LFGB aus und filtert auf den Zuständigkeitsbereich Main-Kinzig-Kreis.</p>
+      <p>Dies ist keine amtliche App. Maßgeblich bleibt stets die Originalveröffentlichung.</p>
+      <a href="https://verbraucherfenster.hessen.de/ernaehrung/sichere-lebensmittel/veroeffentlichung-maengel-lfgb" target="_blank" rel="noopener">Amtliche Quelle öffnen</a>
+    </section>
+  </main>
+
+  <footer>MKK Hygiene-Monitor · PWA</footer>
+  <script src="app.js" defer></script>
+</body>
+</html>
