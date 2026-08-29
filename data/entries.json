@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-08-29T12:00:00+00:00",
+  "source": "https://verbraucherfenster.hessen.de/ernaehrung/sichere-lebensmittel/veroeffentlichung-maengel-lfgb",
+  "authority": "Main-Kinzig-Kreis",
+  "entries": [
+    {
+      "id": "seed-stehling-schlüchtern",
+      "url": "https://verbraucherfenster.hessen.de/ernaehrung/sichere-lebensmittel/veroeffentlichung-maengel-lfgb",
+      "name": "Der Meisterbäcker, Stehling GmbH & Co. KG",
+      "street": "Hanauer Str. 2a",
+      "postal_code": "36381",
+      "city": "Schlüchtern",
+      "authority": "Main-Kinzig-Kreis",
+      "detected_date": "",
+      "published_date": "",
+      "summary": "Es wurden in mehreren Betriebsbereichen wiederholte und zum Teil erhebliche Mängel in der Betriebshygiene und im Umgang mit Lebensmitteln festgestellt und dokumentiert. Die Mängel wurden inzwischen behoben.",
+      "resolved": true,
+      "first_seen": "2026-08-29T12:00:00+00:00",
+      "last_seen": "2026-08-29T12:00:00+00:00"
+    },
+    {
+      "id": "7087",
+      "url": "https://verbraucherfenster.hessen.de/ernaehrung/sichere-lebensmittel/veroeffentlichung-maengel-lfgb/maengel/mangel/view/7087/sAg5T3E/verbraucherfenster.frontend_display_maengel_controller_display/Mangel",
+      "name": "Feinkost Angelo",
+      "street": "Weißkirchenweg 11",
+      "postal_code": "63571",
+      "city": "Gelnhausen",
+      "authority": "Main-Kinzig-Kreis",
+      "detected_date": "09.07.2026",
+      "published_date": "11.08.2026",
+      "summary": "Es wurden im Thekenbereich wiederholte und zum Teil erhebliche Mängel im Umgang mit Lebensmitteln festgestellt und dokumentiert. Insbesondere wurden erforderliche Kühltemperaturen nicht eingehalten. Zum Zeitpunkt der Nachkontrolle am 15.07.2026 waren die Mängel behoben.",
+      "resolved": true,
+      "first_seen": "2026-08-11T00:00:00+00:00",
+      "last_seen": "2026-08-29T12:00:00+00:00"
+    }
+  ]
+}
